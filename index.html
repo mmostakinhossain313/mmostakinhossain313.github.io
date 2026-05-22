@@ -2,31 +2,184 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <title>আমার পোর্টফোলিও</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostakin Hossain | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --success-color: #34d399;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            margin-left: 15px;
+            height: 1px;
+            background: #334155;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background: #111827;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            font-weight: bold;
+        }
+
+        .skill-item span {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: normal;
+            margin-top: 5px;
+        }
+
+        .contact-info {
+            background: #111827;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px dashed var(--accent-color);
+        }
+
+        .contact-info a {
+            color: var(--success-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>স্বাগতম! আমি [আপনার নাম]</h1>
-        <p>ওয়েব ডেভেলপার এবং ডিজাইনার</p>
-    </header>
 
-    <section>
-        <h2>আমার সম্পর্কে</h2>
-        <p>আমি বিভিন্ন ধরনের আধুনিক এবং প্রতিক্রিয়াশীল ওয়েবসাইট তৈরিতে দক্ষ। আমি নতুন প্রযুক্তি শিখতে এবং চ্যালেঞ্জ গ্রহণ করতে ভালোবাসি।</p>
-    </section>
+    <div class="container">
+        <header>
+            <h1>স্বাগতম! আমি <span>মোস্তাকিন হোসেন</span></h1>
+            <div class="subtitle">প্রম্পট ইঞ্জিনিয়ার | অটোমেশন স্পেশালিস্ট | কিউএ ইঞ্জিনিয়ার</div>
+        </header>
 
-    <section>
-        <h2>দক্ষতা</h2>
-        <ul>
-            <li>HTML5 ও CSS3</li>
-            <li>জাভাস্ক্রিপ্ট (JavaScript)</li>
-            <li>রিঅ্যাক্ট (React)</li>
-        </ul>
-    </section>
+        <section id="about">
+            <h2>আমার সম্পর্কে</h2>
+            <p>আমি একজন আধুনিক প্রযুক্তিপ্রেমী এবং ফ্রিল্যান্সার। এআই প্রম্পট ইঞ্জিনিয়ারিং, বিজনেস অটোমেশন এজেন্সি পরিচালনা এবং টেকনিক্যাল কোয়ালিটি কন্ট্রোল নিয়ে আমি কাজ করছি। জটিল প্রযুক্তিগত প্রক্রিয়াকে সহজ ও স্বয়ংক্রিয় করে ব্যবসার কার্যক্ষমতা বাড়ানোই আমার মূল লক্ষ্য।</p>
+        </section>
 
-    <section>
-        <h2>যোগাযোগ</h2>
-        <p>ইমেইল: your.email@example.com</p>
-    </section>
+        <section id="skills">
+            <h2>দক্ষতা ও সার্ভিসসমূহ</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    Prompt Engineering
+                    <span>AI মডেল ও চ্যাটবট অপ্টিমাইজেশন</span>
+                </div>
+                <div class="skill-item">
+                    Automation Agency
+                    <span>ওয়ার্কফ্লো ও বিজনেস অটোমেশন</span>
+                </div>
+                <div class="skill-item">
+                    QA / QC Testing
+                    <span>কোয়ালিটি ও বাগ ফিক্সিং</span>
+                </div>
+                <div class="skill-item">
+                    Web Development
+                    <span>HTML5, CSS3 এবং ফ্রন্টএন্ড আইডিয়া</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>যোগাযোগ</h2>
+            <div class="contact-info">
+                <p style="margin-bottom: 10px; color: var(--text-color);">যেকোনো প্রজেক্ট বা আলোচনার জন্য আমাকে ইমেইল করতে পারেন:</p>
+                <a href="mailto:mostakinhossain89@gmail.com">mostakinhossain89@gmail.com</a>
+            </div>
+        </section>
+
+        <footer>
+            <p style="text-align: center; font-size: 0.85rem;">&copy; 2026 Mostakin Hossain. All Rights Reserved.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
