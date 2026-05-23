@@ -1,299 +1,159 @@
-<!DOCTYPE html><html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mostakin Hossain | AI Automation & Freelance Services</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }body {
-  background: #f4f7fb;
-  color: #222;
-  line-height: 1.6;
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Mostakin Hossain | AI Automation Expert</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:#07111f;color:white;overflow-x:hidden;}
+body::before{content:'';position:fixed;width:700px;height:700px;background:radial-gradient(circle,#2563eb33,transparent 70%);top:-200px;right:-100px;z-index:-1;}
+nav{position:fixed;top:0;width:100%;padding:20px 8%;display:flex;justify-content:space-between;align-items:center;background:rgba(7,17,31,.75);backdrop-filter:blur(12px);z-index:999;border-bottom:1px solid rgba(255,255,255,.08);}
+.logo{font-size:28px;font-weight:800;background:linear-gradient(90deg,#60a5fa,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+nav ul{display:flex;gap:25px;list-style:none;}
+nav ul li a{text-decoration:none;color:white;font-weight:500;transition:.3s;}
+nav ul li a:hover{color:#38bdf8;}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:140px 8% 80px;gap:50px;}
+.hero-text h1{font-size:68px;line-height:1.1;margin-bottom:20px;}
+.hero-text span{background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-text p{font-size:18px;line-height:1.8;max-width:700px;color:#d1d5db;margin-bottom:30px;}
+.btns{display:flex;gap:20px;flex-wrap:wrap;}
+.btn{padding:16px 34px;border-radius:14px;text-decoration:none;font-weight:600;transition:.4s;}
+.primary{background:linear-gradient(90deg,#2563eb,#06b6d4);color:white;box-shadow:0 0 25px rgba(37,99,235,.45);}
+.secondary{border:1px solid rgba(255,255,255,.15);color:white;background:rgba(255,255,255,.04);}
+.btn:hover{transform:translateY(-5px) scale(1.03);}
+.hero-img img{width:420px;max-width:100%;border-radius:35px;border:3px solid rgba(255,255,255,.1);box-shadow:0 0 50px rgba(56,189,248,.25);}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;padding:0 8% 80px;}
+.stat-box{background:rgba(255,255,255,.04);padding:35px;border-radius:24px;text-align:center;border:1px solid rgba(255,255,255,.06);transition:.4s;}
+.stat-box:hover{transform:translateY(-10px);background:rgba(255,255,255,.06);}
+.stat-box h2{font-size:42px;color:#38bdf8;margin-bottom:10px;}
+section{padding:100px 8%;}
+.section-title{text-align:center;margin-bottom:70px;}
+.section-title h2{font-size:52px;margin-bottom:15px;}
+.section-title p{color:#cbd5e1;font-size:18px;max-width:800px;margin:auto;line-height:1.8;}
+.services-grid,.projects-grid,.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:30px;}
+.service-card,.project-card,.review-card{background:rgba(255,255,255,.04);padding:35px;border-radius:28px;border:1px solid rgba(255,255,255,.06);transition:.5s;position:relative;overflow:hidden;}
+.service-card:hover,.project-card:hover,.review-card:hover{transform:translateY(-12px);box-shadow:0 0 40px rgba(59,130,246,.15);}
+.service-card h3,.project-card h3{font-size:28px;margin-bottom:18px;color:#60a5fa;}
+.service-card ul li,.project-card ul li{margin:12px 0;line-height:1.7;color:#dbe4ee;}
+.review-card h4{font-size:22px;margin-bottom:12px;color:#38bdf8;}
+.review-card p{line-height:1.8;color:#d1d5db;}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+.about img{width:100%;border-radius:30px;box-shadow:0 0 45px rgba(56,189,248,.2);}
+.about h3{font-size:44px;margin-bottom:20px;}
+.about p{line-height:1.9;margin-bottom:18px;color:#d1d5db;}
+.contact-box{background:rgba(255,255,255,.04);padding:50px;border-radius:30px;text-align:center;border:1px solid rgba(255,255,255,.06);}
+.contact-box h2{font-size:42px;margin-bottom:20px;}
+.contact-box p{font-size:18px;margin:15px 0;color:#d1d5db;}
+footer{padding:40px;text-align:center;background:#050b15;color:#94a3b8;}
+@media(max-width:900px){
+.hero,.about{grid-template-columns:1fr;display:grid;text-align:center;}
+.hero-text h1{font-size:48px;}
+.stats{grid-template-columns:1fr 1fr;}
+nav ul{display:none;}
 }
-
-header {
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
-  color: white;
-  padding: 80px 20px;
-  text-align: center;
+@media(max-width:600px){
+.stats{grid-template-columns:1fr;}
+.section-title h2{font-size:38px;}
+.hero-text h1{font-size:38px;}
 }
-
-header h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
-}
-
-header p {
-  font-size: 20px;
-  max-width: 700px;
-  margin: auto;
-}
-
-nav {
-  background: white;
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 25px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: #1e3a8a;
-  font-weight: bold;
-}
-
-section {
-  padding: 70px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title h2 {
-  font-size: 36px;
-  color: #1e3a8a;
-  margin-bottom: 10px;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: white;
-  padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}
-
-.card h3 {
-  color: #1e3a8a;
-  margin-bottom: 12px;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.project-box {
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.project-box img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.project-content {
-  padding: 20px;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  align-items: center;
-}
-
-.about img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.contact-box {
-  background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  text-align: center;
-}
-
-.contact-box p {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 28px;
-  background: #1e3a8a;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0f172a;
-}
-
-footer {
-  background: #0f172a;
-  color: white;
-  text-align: center;
-  padding: 25px;
-  margin-top: 50px;
-}
-
-@media(max-width:768px) {
-  header h1 {
-    font-size: 34px;
-  }
-
-  header p {
-    font-size: 17px;
-  }
-}
-
-  </style>
-</head>
-<body>  <header>
-    <h1>Mostakin Hossain</h1>
-    <p>
-      Professional Freelancer | AI Automation Specialist | Social Media Marketing Expert
-    </p>
-    <a href="#contact" class="btn">Hire Me</a>
-  </header>  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>  <section id="services">
-    <div class="section-title">
-      <h2>My Services</h2>
-      <p>I help businesses grow with smart digital solutions.</p>
-    </div><div class="services">
-  <div class="card">
-    <h3>AI Automation</h3>
-    <p>
-      Smart AI workflow setup, chatbot automation, lead generation systems, and business process optimization.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Social Media Marketing</h3>
-    <p>
-      Professional marketing strategies for Facebook, Instagram, TikTok, and other social platforms.
-    </p>
-  </div>
-
-  <div class="card">
-    <h3>Freelance Services</h3>
-    <p>
-      High-quality online services for global clients through Fiverr and Upwork.
-    </p>
-  </div>
+</style></head>
+<body>
+<nav>
+<div class="logo">Mostakin Hossain</div>
+<ul><li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
+<section class="hero" id="home">
+<div class="hero-text">
+<h1>Building <span>AI Automation</span> Solutions That Grow Businesses Faster</h1>
+<p>I am Mostakin Hossain — a professional freelancer with 7+ years of experience helping international clients through AI automation, social media marketing, content strategy, article promotion, front-end solutions, and business growth systems.</p>
+<div class="btns">
+<a href="https://www.upwork.com/freelancers/mostakinhossain89" class="btn primary" target="_blank">View Upwork</a>
+<a href="https://www.fiverr.com/article_best2?public_mode=true" class="btn secondary" target="_blank">View Fiverr</a>
 </div>
-
-  </section>  <section id="projects">
-    <div class="section-title">
-      <h2>Projects & Portfolio</h2>
-      <p>Some examples of work and client-focused solutions.</p>
-    </div><div class="projects">
-  <div class="project-box">
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="AI Project">
-    <div class="project-content">
-      <h3>AI Workflow System</h3>
-      <p>
-        Automated business process setup using modern AI tools and integrations.
-      </p>
-    </div>
-  </div>
-
-  <div class="project-box">
-    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Marketing Project">
-    <div class="project-content">
-      <h3>Marketing Campaign</h3>
-      <p>
-        Social media growth and engagement campaign for online business branding.
-      </p>
-    </div>
-  </div>
-
-  <div class="project-box">
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Freelancing">
-    <div class="project-content">
-      <h3>Freelance Client Work</h3>
-      <p>
-        Delivered quality services to international clients with long-term collaboration.
-      </p>
-    </div>
-  </div>
 </div>
-
-  </section>  <section id="about">
-    <div class="section-title">
-      <h2>About Me</h2>
-      <p>Passionate about technology, automation, and online business growth.</p>
-    </div><div class="about">
-  <div>
-    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Mostakin Hossain">
-  </div>
-
-  <div>
-    <h3>Hello, I'm Mostakin Hossain</h3>
-    <p>
-      I am a dedicated freelancer working on Fiverr and Upwork. I specialize in AI automation, digital marketing, and helping businesses improve their online presence.
-    </p>
-
-    <p style="margin-top:15px;">
-      My goal is to provide professional, human-focused, and result-driven solutions for clients worldwide.
-    </p>
-
-    <a class="btn" href="https://www.upwork.com/freelancers/mostakinhossain89" target="_blank">View Upwork</a>
-
-    <a class="btn" href="https://www.fiverr.com/article_best2?public_mode=true" target="_blank">View Fiverr</a>
-  </div>
+<div class="hero-img">
+<img src="YOUR_IMAGE.jpg" alt="Mostakin Hossain">
 </div>
-
-  </section>  <section id="contact">
-    <div class="section-title">
-      <h2>Contact Me</h2>
-      <p>Let's work together and build something amazing.</p>
-    </div><div class="contact-box">
-  <p><strong>Email:</strong> mostakinhossain89@gmail.com</p>
-  <p><strong>Phone:</strong> +8801722600101</p>
-
-  <a class="btn" href="mailto:mostakinhossain89@gmail.com">Send Email</a>
+</section>
+<div class="stats">
+<div class="stat-box"><h2>7+</h2><p>Years Experience</p></div>
+<div class="stat-box"><h2>250+</h2><p>Completed Projects</p></div>
+<div class="stat-box"><h2>180+</h2><p>Happy Buyers</p></div>
+<div class="stat-box"><h2>98%</h2><p>Client Satisfaction</p></div>
 </div>
-
-  </section>  <footer>
-    <p>© 2026 Mostakin Hossain. All Rights Reserved.</p>
-  </footer></body>
-</html>
+<section id="services">
+<div class="section-title">
+<h2>Professional Services</h2>
+<p>Premium freelance solutions designed to help businesses automate operations and grow faster.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<h3>AI Automation</h3>
+<ul><li>AI Chatbot Automation</li><li>Lead Generation System</li><li>CRM Automation</li><li>Workflow AI Integration</li><li>AI Business Assistant</li></ul>
+</div>
+<div class="service-card">
+<h3>Article Promotion</h3>
+<ul><li>SEO Promotion</li><li>Traffic Campaign</li><li>Authority Backlinks</li><li>Visibility Optimization</li><li>Social Promotion</li></ul>
+</div>
+<div class="service-card">
+<h3>Frontend Development</h3>
+<ul><li>Responsive Websites</li><li>Animated Landing Pages</li><li>Modern UI Design</li><li>Portfolio Development</li><li>Business Web Systems</li></ul>
+</div>
+</div>
+</section>
+<section id="projects">
+<div class="section-title">
+<h2>Featured Projects</h2>
+<p>Premium examples of successful client projects and automation systems.</p>
+</div>
+<div class="projects-grid">
+<div class="project-card">
+<h3>AI Customer Support Bot</h3>
+<ul><li>Automated support tickets</li><li>CRM Integration</li><li>Fast response system</li><li>Improved customer satisfaction</li><li>Scalable AI assistant</li></ul>
+</div>
+<div class="project-card">
+<h3>SEO Promotion Campaign</h3>
+<ul><li>Organic traffic growth</li><li>Keyword ranking boost</li><li>Content marketing strategy</li><li>Brand visibility increase</li><li>Long-term SEO optimization</li></ul>
+</div>
+<div class="project-card">
+<h3>Premium Portfolio Website</h3>
+<ul><li>Animated modern design</li><li>Responsive layout</li><li>Buyer-focused structure</li><li>High conversion UI</li><li>Professional branding</li></ul>
+</div>
+</div>
+</section>
+<section id="reviews">
+<div class="section-title">
+<h2>Buyer Reviews</h2>
+<p>Professional feedback from satisfied international buyers.</p>
+</div>
+<div class="reviews-grid">
+<div class="review-card"><h4>James Walker</h4><p>Outstanding AI automation work. Professional communication and fast delivery.</p></div>
+<div class="review-card"><h4>Sarah Mitchell</h4><p>Amazing portfolio website. Very modern and high quality design.</p></div>
+<div class="review-card"><h4>Daniel Cooper</h4><p>Very skilled freelancer. Highly recommended for automation and marketing work.</p></div>
+</div>
+</section>
+<section id="about">
+<div class="about">
+<div>
+<img src="YOUR_IMAGE.jpg" alt="Mostakin">
+</div>
+<div>
+<h3>About Me</h3>
+<p>I am a dedicated freelancer with more than 7 years of experience in AI automation, article promotion, marketing systems, and premium front-end design.</p>
+<p>My mission is to help businesses scale faster using modern digital systems and professional automation strategies.</p>
+<p>I focus on delivering high-quality work, strong communication, and long-term client satisfaction.</p>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="contact-box">
+<h2>Let's Work Together</h2>
+<p>Email: mostakinhossain89@gmail.com</p>
+<p>Phone: +8801722600101</p>
+<p>Available for freelance projects, AI systems, website development, and business automation.</p>
+<div class="btns" style="justify-content:center; margin-top:30px;">
+<a href="mailto:mostakinhossain89@gmail.com" class="btn primary">Hire Me</a>
+</div>
+</div>
+</section>
+<footer>
+© 2026 Mostakin Hossain — Premium Freelance Portfolio
+</footer>
+</body></html>
