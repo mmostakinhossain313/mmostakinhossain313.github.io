@@ -1,27 +1,299 @@
-<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Mostakin AI Automation // Expert Solutions</title>    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    <link rel="preconnect" href="https://fonts.googleapis.com">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>        :root {            --bg-main: #020208;            --bg-card: rgba(6, 10, 26, 0.45);            --neon-blue: #2563eb;            --neon-cyan: #38bdf8;            --neon-purple: #7c3aed;        }
-        body {            font-family: 'Plus Jakarta Sans', sans-serif;            background-color: var(--bg-main);            overflow-x: hidden;        }
-        .heading-font {            font-family: 'Space Grotesk', sans-serif;        }
-        /* High-fidelity Cyberpunk Custom Styling */        .cyber-grid {            background-image: linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),                              linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);            background-size: 40px 40px;        }
-        .premium-card {            background: var(--bg-card);            backdrop-filter: blur(12px);            -webkit-backdrop-filter: blur(12px);            border: 1px solid rgba(56, 189, 248, 0.08);            box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05);            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);        }
-        .premium-card:hover {            border-color: rgba(56, 189, 248, 0.3);            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15),                        inset 0 1px 1px rgba(255, 255, 255, 0.1);            transform: translateY(-4px);        }
-        /* Glowing Avatar Circle Effect like Reference Image */        .avatar-glow-ring {            position: relative;        }        .avatar-glow-ring::before {            content: '';            position: absolute;            inset: -15px;            border-radius: 50%;            border: 2px dashed rgba(56, 189, 248, 0.4);            animation: rotate-clockwise 20s linear infinite;        }        .avatar-glow-ring::after {            content: '';            position: absolute;            inset: -5px;            border-radius: 50%;            border: 2px solid var(--neon-cyan);            box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);        }
-        @keyframes rotate-clockwise {            0% { transform: rotate(0deg); }            100% { transform: rotate(360deg); }        }
-        /* Text Gradient Overlays */        .text-gradient-blue {            background: linear-gradient(135deg, #ffffff 40%, #38bdf8 100%);            -webkit-background-clip: text;            -webkit-text-fill-color: transparent;        }
-        /* Background Light Orbs */        .bg-blur-orb {            position: absolute;            border-radius: 50%;            filter: blur(130px);            opacity: 0.22;            pointer-events: none;            z-index: 0;        }    </style></head><body class="text-slate-300 antialiased bg-[#020208] cyber-grid">
-    <div class="bg-blur-orb w-[600px] h-[600px] bg-blue-600 top-[-200px] left-[-150px]"></div>    <div class="bg-blur-orb w-[500px] h-[500px] bg-purple-600 top-[20%] right-[-100px]"></div>    <div class="bg-blur-orb w-[600px] h-[600px] bg-cyan-700 bottom-[10%] left-[-100px]"></div>
-    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md border-b border-white/5 bg-[#020208]/70">        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">            <a href="#" class="flex items-center gap-2 heading-font font-bold text-xl tracking-wide text-white">                <i class="fa-solid fa-layer-group text-blue-500 text-lg"></i>                Mostakin<span class="text-blue-400 font-normal text-xs uppercase tracking-widest ml-1">AI Automation</span>            </a>            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">                <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>                <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>                <a href="#workflow" class="hover:text-blue-400 transition-colors">Workflows</a>                <a href="#projects" class="hover:text-blue-400 transition-colors">Work</a>                <a href="#reviews" class="hover:text-blue-400 transition-colors">Reviews</a>            </nav>            <a href="#contact" class="px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm tracking-wide shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all duration-300">Hire Me</a>        </div>    </header>
-    <main class="relative z-10 pt-32">        <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-16">            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">                                <div class="lg:col-span-7 space-y-6">                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-blue-950/50 border border-blue-500/30 text-xs font-semibold uppercase tracking-wider text-blue-400">                        <i class="fa-solid fa-microchip animate-pulse"></i> AI Automation Expert                    </div>                    <h1 class="heading-font text-4xl sm:text-6xl font-extrabold tracking-tight text-gradient-blue leading-[1.15]">                        Automate <span class="text-blue-400">Smarter.</span><br>Scale <span class="text-purple-400">Faster.</span>                    </h1>                    <p class="text-slate-400 text-base sm:text-lg font-light max-w-xl leading-relaxed">                        I help businesses automate their workflows, generate more leads, and scale with AI-powered systems that save time and increase profit maximize yield rates.                    </p>                                        <div class="flex flex-wrap items-center gap-4 pt-2">                        <a href="#projects" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-[0_0_25px_rgba(37,99,235,0.3)] transition-all duration-300 flex items-center gap-2">                            View My Work <i class="fa-solid fa-arrow-right text-xs"></i>                        </a>                        <a href="#contact" class="px-8 py-3.5 bg-slate-900/80 border border-white/10 hover:border-white/20 text-white font-medium rounded-xl transition-all duration-300 flex items-center gap-2">                            Let's Talk <i class="fa-solid fa-comments text-xs text-slate-400"></i>                        </a>                    </div>
-                    <div class="flex items-center gap-6 pt-4 text-xs font-semibold tracking-wider text-slate-500 uppercase">                        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Top Rated On Upwork</span>                        <span class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Top Seller On Fiverr</span>                    </div>                </div>
-                <div class="lg:col-span-5 flex flex-col items-center justify-center relative">                    <div class="w-[280px] sm:w-[340px] aspect-square rounded-full avatar-glow-ring flex items-center justify-center p-4 bg-gradient-to-b from-blue-950/20 to-black/40 border border-white/5 shadow-2xl relative overflow-hidden group">                                                <img src="1000007677.jpg" alt="Mostakin Portfolio Image" class="w-full h-full object-cover object-top rounded-full relative z-10 transition-transform duration-500 group-hover:scale-105">                                                <div class="absolute inset-0 bg-gradient-to-t from-blue-950/40 via-transparent to-transparent z-20"></div>                    </div>
-                    <div class="absolute right-[-10px] top-[10%] premium-card px-4 py-3 rounded-xl border border-white/5 space-y-1 w-44 hidden sm:block">                        <div class="flex items-center justify-between text-[10px] uppercase font-mono text-cyan-400">                            <span>Automation Executed</span>                            <i class="fa-solid fa-bolt"></i>                        </div>                        <p class="heading-font text-lg font-bold text-white">1,250+</p>                        <div class="w-full bg-white/5 h-1 rounded-full overflow-hidden"><div class="bg-blue-500 h-full w-[85%]"></div></div>                    </div>
-                    <div class="absolute left-[-20px] bottom-[15%] premium-card px-4 py-3 rounded-xl border border-white/5 space-y-1 w-44 hidden sm:block">                        <div class="flex items-center justify-between text-[10px] uppercase font-mono text-emerald-400">                            <span>Revenue Generated</span>                            <i class="fa-solid fa-chart-line"></i>                        </div>                        <p class="heading-font text-lg font-bold text-white">$320K+</p>                        <div class="w-full bg-white/5 h-1 rounded-full overflow-hidden"><div class="bg-emerald-500 h-full w-[92%]"></div></div>                    </div>                </div>
-            </div>        </section>
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">                <div class="premium-card p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">                    <span class="w-8 h-8 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm mb-2"><i class="fa-solid fa-award"></i></span>                    <h3 class="heading-font text-2xl font-bold text-white tracking-tight">7+</h3>                    <p class="text-[11px] uppercase tracking-wider text-slate-500 font-medium mt-1">Years Experience</p>                </div>                <div class="premium-card p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">                    <span class="w-8 h-8 rounded-full bg-purple-500/10 text-purple-400 flex items-center justify-center text-sm mb-2"><i class="fa-solid fa-circle-check"></i></span>                    <h3 class="heading-font text-2xl font-bold text-white tracking-tight">250+</h3>                    <p class="text-[11px] uppercase tracking-wider text-slate-500 font-medium mt-1">Projects Completed</p>                </div>                <div class="premium-card p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">                    <span class="w-8 h-8 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-sm mb-2"><i class="fa-solid fa-users"></i></span>                    <h3 class="heading-font text-2xl font-bold text-white tracking-tight">180+</h3>                    <p class="text-[11px] uppercase tracking-wider text-slate-500 font-medium mt-1">Happy Clients</p>                </div>                <div class="premium-card p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">                    <span class="w-8 h-8 rounded-full bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-sm mb-2"><i class="fa-solid fa-heart"></i></span>                    <h3 class="heading-font text-2xl font-bold text-white tracking-tight">98%</h3>                    <p class="text-[11px] uppercase tracking-wider text-slate-500 font-medium mt-1">Client Satisfaction</p>                </div>            </div>        </section>
-        <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mb-16">            <div class="text-center space-y-3 mb-16">                <span class="text-xs uppercase font-mono tracking-widest text-blue-400 font-bold">My Services</span>                <h2 class="heading-font text-3xl sm:text-5xl font-bold text-white">AI Powered Business Solutions</h2>            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">                <div class="premium-card rounded-2xl p-6 relative flex flex-col justify-between">                    <div>                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-base mb-6"><i class="fa-solid fa-robot"></i></div>                        <h3 class="heading-font text-lg font-bold text-white mb-4">AI Automation</h3>                        <ul class="space-y-2 text-xs text-slate-400 font-light pl-1">                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>AI Chatbots Deployment</li>                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Workflow Automation Systems</li>                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>Lead Generation Pipelines</li>                            <li><i class="fa-solid fa-angle-right text-blue-400 mr-2"></i>CRM Architecture Layering</li>                        </ul>                    </div>                    <a href="#" class="text-xs font-semibold font-mono tracking-wider text-blue-400 uppercase mt-6 block hover:underline">View Demo <i class="fa-solid fa-arrow-trend-up ml-1 text-[10px]"></i></a>                </div>
-                <div class="premium-card rounded-2xl p-6 relative flex flex-col justify-between">                    <div>                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-base mb-6"><i class="fa-solid fa-bullhorn"></i></div>                        <h3 class="heading-font text-lg font-bold text-white mb-4">Social Media Marketing</h3>                        <ul class="space-y-2 text-xs text-slate-400 font-light pl-1">                            <li><i class="fa-solid fa-angle-right text-purple-400 mr-2"></i>Content Strategy Alignment</li>                            <li><i class="fa-solid fa-angle-right text-purple-400 mr-2"></i>Account Growth Blueprints</li>                            <li><i class="fa-solid fa-angle-right text-purple-400 mr-2"></i>Engagement Booster Engine</li>                            <li><i class="fa-solid fa-angle-right text-purple-400 mr-2"></i>Analytics & Data Tracking</li>                        </ul>                    </div>                    <a href="#" class="text-xs font-semibold font-mono tracking-wider text-purple-400 uppercase mt-6 block hover:underline">View Demo <i class="fa-solid fa-arrow-trend-up ml-1 text-[10px]"></i></a>                </div>
-                <div class="premium-card rounded-2xl p-6 relative flex flex-col justify-between">                    <div>                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-base mb-6"><i class="fa-solid fa-code"></i></div>                        <h3 class="heading-font text-lg font-bold text-white mb-4">Frontend Development</h3>                        <ul class="space-y-2 text-xs text-slate-400 font-light pl-1">                            <li><i class="fa-solid fa-angle-right text-cyan-400 mr-2"></i>Responsive Modern Web Apps</li>                            <li><i class="fa-solid fa-angle-right text-cyan-400 mr-2"></i>High Conversion Landing Pages</li>                            <li><i class="fa-solid fa-angle-right text-cyan-400 mr-2"></i>Custom UI/UX Prototyping</li>                            <li><i class="fa-solid fa-angle-right text-cyan-400 mr-2"></i>Full System Redesigns</li>                        </ul>                    </div>                    <a href="#" class="text-xs font-semibold font-mono tracking-wider text-cyan-400 uppercase mt-6 block hover:underline">View Demo <i class="fa-solid fa-arrow-trend-up ml-1 text-[10px]"></i></a>                </div>            </div>        </section>
-        <section id="contact" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">            <div class="premium-card rounded-3xl border border-white/10 p-8 sm:p-12 text-center space-y-6 relative overflow-hidden">                <h2 class="heading-font text-3xl sm:text-4xl font-extrabold text-white">Ready to Automate & Scale Your Business?</h2>                <p class="text-slate-400 text-sm max-w-lg mx-auto font-light">Let's build your AI powered success story together. Get in touch for custom system blueprints built specifically for your needs.</p>                <div class="flex flex-wrap justify-center gap-4 pt-4">                    <a href="mailto:mostakinhossain89@gmail.com" class="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl shadow-lg transition-all duration-300">Hire Me Now</a>                    <a href="#" class="px-8 py-3.5 bg-slate-900 border border-white/10 text-white font-medium rounded-xl transition-all duration-300">Contact Me</a>                </div>            </div>        </section>    </main>
-    <footer class="border-t border-white/5 bg-black/60 py-12 px-4 sm:px-6 lg:px-8 text-xs font-mono text-slate-500">        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">            <div class="flex items-center gap-2">                <span class="font-bold text-slate-300 uppercase tracking-wider">Mostakin AI</span>                <span>// © 2026 Powered Automation Hub</span>            </div>            <div class="flex gap-4 text-slate-400 text-base">                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-brands fa-github"></i></a>            </div>        </div>    </footer>
-</body></html>
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mostakin Hossain | AI Automation & Freelance Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+nav {
+  background: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: bold;
+}
+
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-box {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.project-box img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-box {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.contact-box p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #1e3a8a;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0f172a;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+
+@media(max-width:768px) {
+  header h1 {
+    font-size: 34px;
+  }
+
+  header p {
+    font-size: 17px;
+  }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Mostakin Hossain</h1>
+    <p>
+      Professional Freelancer | AI Automation Specialist | Social Media Marketing Expert
+    </p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>  <section id="services">
+    <div class="section-title">
+      <h2>My Services</h2>
+      <p>I help businesses grow with smart digital solutions.</p>
+    </div><div class="services">
+  <div class="card">
+    <h3>AI Automation</h3>
+    <p>
+      Smart AI workflow setup, chatbot automation, lead generation systems, and business process optimization.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Social Media Marketing</h3>
+    <p>
+      Professional marketing strategies for Facebook, Instagram, TikTok, and other social platforms.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Freelance Services</h3>
+    <p>
+      High-quality online services for global clients through Fiverr and Upwork.
+    </p>
+  </div>
+</div>
+
+  </section>  <section id="projects">
+    <div class="section-title">
+      <h2>Projects & Portfolio</h2>
+      <p>Some examples of work and client-focused solutions.</p>
+    </div><div class="projects">
+  <div class="project-box">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop" alt="AI Project">
+    <div class="project-content">
+      <h3>AI Workflow System</h3>
+      <p>
+        Automated business process setup using modern AI tools and integrations.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop" alt="Marketing Project">
+    <div class="project-content">
+      <h3>Marketing Campaign</h3>
+      <p>
+        Social media growth and engagement campaign for online business branding.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Freelancing">
+    <div class="project-content">
+      <h3>Freelance Client Work</h3>
+      <p>
+        Delivered quality services to international clients with long-term collaboration.
+      </p>
+    </div>
+  </div>
+</div>
+
+  </section>  <section id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <p>Passionate about technology, automation, and online business growth.</p>
+    </div><div class="about">
+  <div>
+    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop" alt="Mostakin Hossain">
+  </div>
+
+  <div>
+    <h3>Hello, I'm Mostakin Hossain</h3>
+    <p>
+      I am a dedicated freelancer working on Fiverr and Upwork. I specialize in AI automation, digital marketing, and helping businesses improve their online presence.
+    </p>
+
+    <p style="margin-top:15px;">
+      My goal is to provide professional, human-focused, and result-driven solutions for clients worldwide.
+    </p>
+
+    <a class="btn" href="https://www.upwork.com/freelancers/mostakinhossain89" target="_blank">View Upwork</a>
+
+    <a class="btn" href="https://www.fiverr.com/article_best2?public_mode=true" target="_blank">View Fiverr</a>
+  </div>
+</div>
+
+  </section>  <section id="contact">
+    <div class="section-title">
+      <h2>Contact Me</h2>
+      <p>Let's work together and build something amazing.</p>
+    </div><div class="contact-box">
+  <p><strong>Email:</strong> mostakinhossain89@gmail.com</p>
+  <p><strong>Phone:</strong> +8801722600101</p>
+
+  <a class="btn" href="mailto:mostakinhossain89@gmail.com">Send Email</a>
+</div>
+
+  </section>  <footer>
+    <p>© 2026 Mostakin Hossain. All Rights Reserved.</p>
+  </footer></body>
+</html>
